@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 800px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .header {
+    width: 100%;
+    height: 50px;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .server-form {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
   }
-}
+  
+  .server-input {
+    flex: 1;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  .connect-button {
+    width: 100px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  form {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+  }
+
+  .message-input {
+    flex: 1;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  .send-button {
+    width: 100px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .message-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+  
+  .message {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .received {
+    background-color: #fff;
+  }
+  
+  .sent {
+    background-color: #4caf50;
+    color: #fff;
+    align-self: flex-end;
+  }
